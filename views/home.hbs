@@ -1,1 +1,9 @@
 <h1 class="title">This is the Home page</h1>
+
+<div class="home-container">
+  {{#each db}}
+    <a href="{{this.name}}" class="card">
+        <h2 class="sub">{{this.name}}</h2>
+    </a>
+  {{/each}}
+</div>
